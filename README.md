@@ -1,6 +1,6 @@
-OCR Challenge 1
-Swagata Chakroborty
-I used the nlp-compromise to identify names within the data I parsed.
+OCR Challenge 1  
+Swagata Chakroborty  
+I used the nlp-compromise library to identify names within the data I parsed.
 
 ## How to Run Applicatiom
 
