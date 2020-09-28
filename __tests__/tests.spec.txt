@@ -1,0 +1,54 @@
+import {getContactInfo} from './getContactInfo.js'
+
+//const getContactInfo  = require('../getContactInfo')
+//const email = require("../email")
+
+// describe("return the email as true", () => {
+//     // test("it should run", () => {
+
+//     //     expect(email()).toBe("This is a email");
+//     // })
+
+//     test("test 2", () => {
+
+//         const input = ["abc@gmail.com"];
+
+//         const output = false;
+
+//         expect(getContactInfo(input)).toBe("abc@gmail.com");
+//     })
+
+
+// })
+
+// describe("read a text file", () => {
+//     process.argv = ['node', 'jest', 'hello.txt']
+
+//     const index = require('../index');
+
+//     expect(index).isNot(null)
+
+// })
+// export default tests = {
+    
+// }
+describe("see if getContactInfo is correctly returning the three outputs", () => {
+    // process.argv = ['node', 'jest', 'hello.txt']
+    // const index = require('../index')
+
+    // test('checks output array', () => {
+    //     const spy = jest.spyOn(index, 'getContactInfo');
+    //     const spyingOutput = index
+    //     expect(spy).toHaveBeenCalled();
+    //     expect(spyingOutput).toBe(true)
+    // })
+    
+    test("check email output on real data", () => {
+        const document = ["ASYMMETRIK LTD"," Mike Smith","Senior Software Engineer"," (410)555-1234", "msmith@asymmetrik.com"]
+
+        expect(getContactInfo(document)).toBe(["Mike Smith","4105551234","msmith@asymmetrik.com"]) 
+    })
+    
+
+
+})
