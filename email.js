@@ -1,5 +1,5 @@
 
-
+//own module to make testing easier
 export default function email(potentialEmail)  {
 
     let emailRegex = /\b([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\b/

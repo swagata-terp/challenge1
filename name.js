@@ -1,17 +1,17 @@
 import nlp from 'compromise'
 
-//saving the name and priority because if we find a name with its tag with
-//a higher priority, that means it is more likely to be a name
 
 export default function name(potentialName) {
 
     let names = new Array(2);
-
+    //get the json values which contain the terms for each text
     let currentTerms =  nlp(potentialName).json()
+    
     if(currentTerms.length == 0) {
      
         return null;
     }
+    //JSONArray with 1 object consisting of terms and text, so access the array and process the terms 
     for(var term of currentTerms[0]['terms']) {
         var foundNameTag = false; //once we find a tagged name, we can exit the loop
         var i = 0;

@@ -3,7 +3,10 @@ import name from './name.js'
 import phone from './phoneNumber.js'
 
 export function getContactInfo(document) {
+    //the three datapoints, phone number, name and email is stored in this array
     let info = new Array(3);
+    //regex checks for potential numbers and emails
+    //added them into seperate modules for easier testing.
     let potentialEmail = /@/
     let potentialPhoneNumber = /\d{4}$/
     for(var i = 0; i < document.length; i++) {
