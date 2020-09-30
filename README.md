@@ -12,11 +12,11 @@ To run the application, first retrieve all dependencies through npm install.
 
 `npm start <text file>`
 
-Also have the option of outputting to a text file
+Also have the option of outputting to a text file. The application can also process multiple business cards at once. Simply have a new line inbetweeen each business card.
 
 `npm start <input text file> > <output text file>`
 
-To run tests, simply run 
+For testing, run 
 
 `npm test`
 
